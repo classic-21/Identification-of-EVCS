@@ -18,17 +18,9 @@
             border-radius: 10px;
             background-color: #f9f9f9;
         }
-        label {
-            display: block;
-            text-align: left;
-            margin: 10px 0 5px;
-            font-weight: bold;
-        }
         input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            box-sizing: border-box;
+            margin: 10px;
+            padding: 5px;
         }
         button {
             padding: 10px 20px;
@@ -47,29 +39,29 @@
     <h1>Let's find out whether we need more EV charging stations</h1>
     <form action="/predict" method="post">
         <p>Enter Feature Values:</p>
-        <label for="feature1">Total Four Wheelers</label>
-        <input type="text" id="feature1" name="feature1" placeholder="Enter total four wheelers" required>
+        <label>Total Four Wheelers</label>
+        <input type="text" name="feature1" placeholder="Total_four_wheelers" required>
         
-        <label for="feature2">Restaurants</label>
-        <input type="text" id="feature2" name="feature2" placeholder="Enter number of restaurants" required>
+        <label>Restaurants</label>
+        <input type="text" name="feature2" placeholder="Restaurant" required>
         
-        <label for="feature3">Government Facilities</label>
-        <input type="text" id="feature3" name="feature3" placeholder="Enter number of government facilities" required>
+        <label>Government Facilities</label>
+        <input type="text" name="feature3" placeholder="Government" required>
         
-        <label for="feature4">PP Index</label>
-        <input type="text" id="feature4" name="feature4" placeholder="Enter PP Index value" required>
+        <label>PP Index</label>
+        <input type="text" name="feature4" placeholder="PP Index" required>
         
-        <label for="feature5">EV Stations</label>
-        <input type="text" id="feature5" name="feature5" placeholder="Enter number of EV stations" required>
+        <label>EV Stations</label>
+        <input type="text" name="feature5" placeholder="EV Stations" required>
         
-        <label for="feature6">Residential Areas</label>
-        <input type="text" id="feature6" name="feature6" placeholder="Enter residential data" required>
+        <label>Residential Areas</label>
+        <input type="text" name="feature6" placeholder="Residential" required>
         
-        <label for="feature7">Commercial Areas</label>
-        <input type="text" id="feature7" name="feature7" placeholder="Enter commercial data" required>
+        <label>Commercial Areas</label>
+        <input type="text" name="feature7" placeholder="Commercial" required>
         
-        <label for="feature8">Fuel Stations</label>
-        <input type="text" id="feature8" name="feature8" placeholder="Enter number of fuel stations" required>
+        <label>Fuel Stations</label>
+        <input type="text" name="feature8" placeholder="Fuel Stations" required>
         
         <br>
         <button type="submit">Predict</button>
